@@ -10,7 +10,8 @@ public class Person {
   private String zipCode;
   private String city;
 
-  public void initialize(){
+  public void initialize() {
+
       Scanner scanner= new Scanner(System.in);
       System.out.println("Enter your surname: ");
       surname=scanner.nextLine();
@@ -59,28 +60,30 @@ public class Person {
 }
 
 
-class Staff extends Person{
-    private  String education;
+class Staff extends Person {
+    private String education;
     private String position;
 
-    public void initialize1(){
+    public void initialize1() {
         initialize();
-        Scanner scanner=new Scanner(System.in);
+
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Enter your education:");
-        education=scanner.nextLine();
+        education = scanner.nextLine();
         System.out.println("Enter your position:");
-        position=scanner.nextLine();
+        position = scanner.nextLine();
 
     }
 
-    public void print1(){
+    public void print1() {
         print();
-        System.out.println("Your education is:"+education);
-        System.out.println("Your postion is:"+position);
+        System.out.println("Your education is:" + education);
+        System.out.println("Your postion is:" + position);
 
 
 
     }
+
 
 
 
@@ -89,10 +92,19 @@ class Staff extends Person{
             Staff staffMember=new Staff();
             staffMember.initialize1();
             staffMember.print1();
-            staffMember.initialize();
 
-            Person person = new Person();
-            person.initialize();
+           Person person=new Person();
+           person.initialize();
+          person.print();
+
+
+          // person.initialize1();
+            // we cannot call initialize1() method because it is not in the Person class AND inheritance goes from up to down
+
+
+
+
+
 
 
         }
