@@ -1,7 +1,6 @@
 import java.sql.SQLOutput;
 import java.util.Scanner;
 
-import static jdk.internal.org.jline.utils.Colors.s;
 
 public class Person {
   private String surname;
