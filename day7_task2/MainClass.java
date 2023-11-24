@@ -26,8 +26,10 @@ public class MainClass {
             if (animal instanceof Fish) {
                 ((Fish) animal).swim();
             }
-            System.out.println("");
+            System.out.println("************************************");
         }
+       // animals[1].getvoice();
+       // animals[3].getvoice();
     }
 }
 
